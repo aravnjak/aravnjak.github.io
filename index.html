@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link href="https://fonts.googleapis.com/css?family=B612&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+    integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+    crossorigin="anonymous">
+
+  <link rel="icon" href="assets/images/logo.jpg">
+
+  <link rel="stylesheet" href="assets/css/index.css">
+
+  <link rel="stylesheet" href="assets/css/main.css">
+  
+  <link rel="stylesheet" href="assets/css/contact.css">
+  <link rel="stylesheet" href="assets/css/gallery.css">
+  
+  <link rel="stylesheet" href="assets/css/nav.css">
+
+  <title>Slit24.photo</title>
+</head>
+
+<body id="root" onload="init()">
+  <div include="src/nav/tabs"></div>
+  <div id="home" class="container">
+    <div include="src/main"></div>
+
+    <div id="gallery" class="gallery" include="src/gallery"></div>
+
+    <div class="contact" include="src/contact"></div>
+
+    <div include="src/footer"></div>
+  </div>
+
+  <script src="assets/js/load-json.js"></script>
+  <script src="assets/js/include-html.js"></script>
+  <script src="assets/js/wait-for-element.js"></script>
+
+  <script src="index.js"></script>
+  <script src="src/main.js"></script>
+
+  <script>
+    includeHTML();
+  </script>
+</body>
+
+</html>
